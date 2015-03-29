@@ -4,6 +4,7 @@ alias ll='ls -Glah'
 
 # Git
 alias gc='git commit -v'
+alias gd='git diff'
 alias ggpull='git pull --rebase origin $(current_branch)'
 alias ggpush='git push origin $(current_branch)'
 
