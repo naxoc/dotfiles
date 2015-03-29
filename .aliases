@@ -1,0 +1,12 @@
+# Files
+alias ls='ls -G'
+alias ll='ls -Glah'
+
+# Git
+alias gc='git commit -v'
+alias ggpull='git pull --rebase origin $(current_branch)'
+alias ggpush='git push origin $(current_branch)'
+
+# Grep
+alias grep='grep --color=auto'
+
