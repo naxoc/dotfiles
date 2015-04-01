@@ -1,5 +1,6 @@
 # Files
 alias ls='ls -G'
+alias l='ls -Glah'
 alias ll='ls -Glah'
 
 # Git
