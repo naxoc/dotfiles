@@ -1,0 +1,6 @@
+# http://osxdaily.com/2013/04/24/improve-command-line-history-search
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+set show-all-if-ambiguous on
+set completion-ignore-case on
+TAB: menu-complete
