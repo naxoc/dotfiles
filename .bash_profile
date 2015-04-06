@@ -2,6 +2,9 @@
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 export EDITOR="vim"
+# PHP versions.
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+
 export PATH="$PATH:~/.scripts"
 
 # Append to history - don't overwrite.
@@ -14,6 +17,7 @@ fi
 if [[ -f ~/.aliases ]]; then
   . ~/.aliases
 fi
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   source `brew --prefix`/etc/bash_completion
 fi
