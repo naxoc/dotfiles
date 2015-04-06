@@ -11,5 +11,5 @@ caption always "%{=u c}%-w%{= cW} %n %t %{-}%{=u c}%+w %{m}%="
 
 defscrollback 30000
 
-#escape ^Bb
+escape ^Oo
 
