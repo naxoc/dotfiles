@@ -2,8 +2,6 @@
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 export EDITOR="vim"
-# PHP versions.
-export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 
 export PATH="$PATH:~/.scripts"
 
@@ -17,10 +15,12 @@ fi
 if [[ -f ~/.aliases ]]; then
   . ~/.aliases
 fi
+
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   source `brew --prefix`/etc/bash_completion
 fi
+
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
 	GIT_PROMPT_THEME=Default
 	source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
@@ -30,3 +30,4 @@ fi
 if command_exists rbenv ; then
   eval "$(rbenv init -)"
 fi
+
