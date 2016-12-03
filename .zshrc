@@ -45,11 +45,11 @@ ZSH_THEME="avit"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-hubflow jsontools zsh-syntax-highlighting history-substring-search)
+plugins=(git git-hubflow jsontools sublime history-substring-search zsh-syntax-highlighting)
 
 # User configuration
 
-export PATH="/Users/ckj/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.composer/vendor/bin:~/.scripts"
+export PATH="/Users/ckj/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.composer/vendor/bin/:/Users/ckj/.scripts:/Users/ckj/.scripts/inf-tools:/Users/ckj/Documents/inf-devops:/Users/ckj/.gem/ruby/2.0.0/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -75,3 +75,11 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+autoload bashcompinit
+bashcompinit
+#Include Drush completion.
+if [ -f "/Users/ckj/.drush/drush.complete.sh" ] ; then
+  source /Users/ckj/.drush/drush.complete.sh
+fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
