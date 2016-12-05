@@ -45,11 +45,11 @@ ZSH_THEME="avit"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-hubflow jsontools sublime history-substring-search zsh-syntax-highlighting)
+plugins=(git git-hubflow sublime history-substring-search jsontools zsh-syntax-highlighting)
 
 # User configuration
 
-export PATH="/Users/ckj/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.composer/vendor/bin/:/Users/ckj/.scripts:/Users/ckj/.scripts/inf-tools:/Users/ckj/Documents/inf-devops:/Users/ckj/.gem/ruby/2.0.0/bin:$PATH"
+export PATH="/Users/ckj/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/ckj/.composer/vendor/bin:/Users/ckj/.scripts:/Users/ckj/.scripts/inf-tools:/Users/ckj/Documents/inf-devops:/Users/ckj/.gem/ruby/2.0.0/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -74,6 +74,8 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias pstorm="open -a PHPStorm"
+alias stree='open -a SourceTree'
 
 autoload bashcompinit
 bashcompinit
