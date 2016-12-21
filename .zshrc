@@ -75,7 +75,7 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias pstorm="open -a PHPStorm"
-alias stree='open -a SourceTree'
+alias stree='open -a SourceTree .'
 
 autoload bashcompinit
 bashcompinit
