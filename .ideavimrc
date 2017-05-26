@@ -1,0 +1,10 @@
+
+" Change mapleader to ,
+let mapleader = ","
+imap jj <Esc>
+" Bubble single lines. Killer feature called 'Line up/down' in Textmate.
+nmap <C-Up> ddkP
+nmap <C-Down> ddp
+" Bubble multiple lines
+vmap <C-Up> xkP`[V`]
+vmap <C-Down> xp`[V`]
