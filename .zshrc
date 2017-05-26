@@ -10,9 +10,6 @@ source $ZSH/oh-my-zsh.sh
 autoload -U promptinit; promptinit
 prompt pure
 
-
-
-
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 

@@ -86,16 +86,23 @@ module.exports = {
     bell: 'SOUND',
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: false
+    copyOnSelect: false,
 
-    // if true, on right click selected text will be copied or pasted if no
-    // selection is present (true by default on Windows)
-    // quickEdit: true
+      // if true, on right click selected text will be copied or pasted if no
+      // selection is present (true by default on Windows)
+      // quickEdit: true
 
-    // URL to custom bell
-    // bellSoundURL: 'http://example.com/bell.mp3',
+      // URL to custom bell
+      // bellSoundURL: 'http://example.com/bell.mp3',
 
-    // for advanced config flags please refer to https://hyper.is/#cfg
+      // for advanced config flags please refer to https://hyper.is/#cfg
+
+      hyperTabs: {
+        trafficButtons: true,
+        border: true,
+        tabIconsColored: true
+
+      }
   },
 
   // a list of plugins to fetch and install from npm
@@ -105,12 +112,15 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    //`hyper-one-light`
-    `hyper-snazzy`
+    'hyper-one-light',
+    'hyperterm-dibdabs',
+    `hyper-tabs-enhanced`,
+    `hyperborder`
   ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
-  localPlugins: []
+  localPlugins: [],
+
 };

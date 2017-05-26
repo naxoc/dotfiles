@@ -33,3 +33,5 @@
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
 	required = true
+[oh-my-zsh]
+	hide-status = 1
