@@ -1,4 +1,6 @@
 .DS_STORE
 .idea
 sites/all/modules/ckj_tools
-
+*.sublime-project
+*.sublime-workspace
+.sass-cache
