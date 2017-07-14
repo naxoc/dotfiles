@@ -1,0 +1,54 @@
+{
+  "title": "Copy paste",
+  "rules": [
+  {
+    "description": "Copy on right ctrl + period and paste on right ctrl + slash",
+    "manipulators": [
+    {
+      "from":
+      {
+        "key_code": "period",
+        "modifiers":
+        {
+          "mandatory": [
+            "right_control"
+          ],
+          "optional": [
+            "any"
+          ]
+        }
+      },
+      "to": [
+      {
+        "key_code": "c",
+        "modifiers": [
+          "left_command"
+        ]
+      }],
+      "type": "basic"
+    },
+    {
+      "from":
+      {
+        "key_code": "slash",
+        "modifiers":
+        {
+          "mandatory": [
+            "right_control"
+          ],
+          "optional": [
+            "any"
+          ]
+        }
+      },
+      "to": [
+      {
+        "key_code": "v",
+        "modifiers": [
+          "left_command"
+        ]
+      }],
+      "type": "basic"
+    }]
+  }]
+}
