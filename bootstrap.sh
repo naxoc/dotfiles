@@ -1,9 +1,11 @@
 #!/bin/bash
+
 cd "$(dirname "$0")"
 #git pull
 function doIt() {
-	rsync --exclude ".osx" --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" --exclude "INSTALL.md" -av --no-perms . ~
-	echo "!!! Start a new terminal session !!!"
+  rsync --exclude "config-files" --exclude ".osx" --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" --exclude "INSTALL.md" -av --no-perms . ~
+  rsync -av --no-perms config-folder/ ~/.config/
+  echo "!!! Start a new terminal session !!!"
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt
