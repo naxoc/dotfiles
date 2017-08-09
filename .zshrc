@@ -54,3 +54,9 @@ if [ -f "/Users/ckj/.drush/drush.complete.sh" ] ; then
 fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# Drupal console
+source "$HOME/.console/console.rc" 2>/dev/null
+# OSX Sierra does not add this for me, so I'll just do it here
+ssh-add ~/.ssh/id_rsa
+
+
