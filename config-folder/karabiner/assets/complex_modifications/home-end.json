@@ -1,0 +1,42 @@
+{
+  "title": "Left hand",
+  "rules": [
+  {
+    "description": "Home on fn+q and end on fn+w",
+    "manipulators": [
+    {
+      "from":
+      {
+        "key_code": "q",
+        "modifiers":
+        {
+          "mandatory": [
+            "fn"
+          ]
+        }
+      },
+      "to": [
+      {
+        "key_code": "home"
+      }],
+      "type": "basic"
+    },
+    {
+      "from":
+      {
+        "key_code": "w",
+        "modifiers":
+        {
+          "mandatory": [
+            "fn"
+          ]
+        }
+      },
+      "to": [
+      {
+        "key_code": "end"
+      }],
+      "type": "basic"
+    }]
+  }]
+}

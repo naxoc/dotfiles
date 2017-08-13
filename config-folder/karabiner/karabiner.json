@@ -136,33 +136,39 @@
             "devices": [
                 {
                     "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": {},
                     "identifiers": {
                         "is_keyboard": true,
                         "is_pointing_device": false,
                         "product_id": 610,
                         "vendor_id": 1452
                     },
-                    "ignore": true
+                    "ignore": true,
+                    "simple_modifications": {}
                 },
                 {
                     "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": {},
                     "identifiers": {
                         "is_keyboard": true,
                         "is_pointing_device": false,
                         "product_id": 321,
                         "vendor_id": 1241
                     },
-                    "ignore": false
+                    "ignore": false,
+                    "simple_modifications": {}
                 },
                 {
                     "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": {},
                     "identifiers": {
                         "is_keyboard": true,
                         "is_pointing_device": true,
                         "product_id": 321,
                         "vendor_id": 1241
                     },
-                    "ignore": true
+                    "ignore": true,
+                    "simple_modifications": {}
                 }
             ],
             "fn_function_keys": {
@@ -180,7 +186,7 @@
                 "f9": "fastforward"
             },
             "name": "60 percent",
-            "selected": true,
+            "selected": false,
             "simple_modifications": {},
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
@@ -275,11 +281,11 @@
                         ]
                     },
                     {
-                        "description": "Change Fn + B/N to Home / End",
+                        "description": "Change Fn + Q/W to Home / End",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "b",
+                                    "key_code": "q",
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
@@ -298,7 +304,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "n",
+                                    "key_code": "w",
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
@@ -365,10 +371,103 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Backspace on fn+A, delete on fn+S",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "a",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "s",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_forward"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Home on fn+q and end on fn+w",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "q",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "home"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "end"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
-            "devices": [],
+            "devices": [
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": {},
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 610,
+                        "vendor_id": 1452
+                    },
+                    "ignore": false,
+                    "simple_modifications": {
+                        "caps_lock": "fn",
+                        "down_arrow": "vk_none",
+                        "left_arrow": "vk_none",
+                        "right_arrow": "right_control",
+                        "up_arrow": "vk_none"
+                    }
+                }
+            ],
             "fn_function_keys": {
                 "f1": "display_brightness_decrement",
                 "f10": "mute",
@@ -384,14 +483,8 @@
                 "f9": "fastforward"
             },
             "name": "Native",
-            "selected": false,
-            "simple_modifications": {
-                "caps_lock": "fn",
-                "down_arrow": "vk_none",
-                "left_arrow": "vk_none",
-                "right_arrow": "right_control",
-                "up_arrow": "vk_none"
-            },
+            "selected": true,
+            "simple_modifications": {},
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
                 "keyboard_type": "ansi"
