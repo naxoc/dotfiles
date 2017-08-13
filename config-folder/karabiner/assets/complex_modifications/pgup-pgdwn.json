@@ -1,0 +1,42 @@
+{
+  "title": "Page up and down",
+  "rules": [
+  {
+    "description": "Page up and page down on semicolon and quote",
+    "manipulators": [
+    {
+      "from":
+      {
+        "key_code": "semicolon",
+        "modifiers":
+        {
+          "mandatory": [
+            "fn"
+          ]
+        }
+      },
+      "to": [
+      {
+        "key_code": "page_down"
+      }],
+      "type": "basic"
+    },
+    {
+      "from":
+      {
+        "key_code": "quote",
+        "modifiers":
+        {
+          "mandatory": [
+            "fn"
+          ]
+        }
+      },
+      "to": [
+      {
+        "key_code": "page_up"
+      }],
+      "type": "basic"
+    }]
+  }]
+}
