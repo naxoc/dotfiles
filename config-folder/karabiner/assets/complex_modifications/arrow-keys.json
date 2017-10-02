@@ -12,6 +12,9 @@
         {
           "mandatory": [
             "fn"
+          ],
+           "optional": [
+            "any"
           ]
         }
       },
@@ -29,6 +32,9 @@
         {
           "mandatory": [
             "fn"
+          ],
+           "optional": [
+            "any"
           ]
         }
       },
@@ -46,6 +52,9 @@
         {
           "mandatory": [
             "fn"
+          ],
+           "optional": [
+            "any"
           ]
         }
       },
@@ -63,6 +72,9 @@
         {
           "mandatory": [
             "fn"
+          ],
+           "optional": [
+            "any"
           ]
         }
       },
