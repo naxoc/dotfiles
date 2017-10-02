@@ -16,7 +16,7 @@ prompt pure
 
 # User configuration
 
-export PATH="/Users/ckj/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/ckj/.composer/vendor/bin:/Users/ckj/.scripts:/Users/ckj/.scripts/inf-tools:/Users/ckj/Documents/inf-devops:/Users/ckj/.gem/ruby/2.0.0/bin:$PATH"
+export PATH="/Users/ckj/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/ckj/.composer/vendor/bin:/Users/ckj.devops:/Users/ckj/.scripts:/Users/ckj/.scripts/inf-tools:/Users/ckj/.gem/ruby/2.0.0/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 
