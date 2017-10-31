@@ -1,5 +1,6 @@
 .DS_STORE
 .idea
+.vscode
 sites/all/modules/ckj_tools
 *.sublime-project
 *.sublime-workspace
