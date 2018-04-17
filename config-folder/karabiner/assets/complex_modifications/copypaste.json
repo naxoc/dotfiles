@@ -2,12 +2,12 @@
   "title": "Copy paste",
   "rules": [
   {
-    "description": "Copy on right ctrl + period and paste on right ctrl + slash",
+    "description": "Copy on right ctrl + end and paste on right ctrl + pgDn",
     "manipulators": [
     {
       "from":
       {
-        "key_code": "period",
+        "key_code": "end",
         "modifiers":
         {
           "mandatory": [
@@ -30,7 +30,7 @@
     {
       "from":
       {
-        "key_code": "slash",
+        "key_code": "page_down",
         "modifiers":
         {
           "mandatory": [
