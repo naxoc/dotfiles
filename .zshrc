@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
-export PATH="/usr/local/mysql/bin:/usr/local/bin:/Users/ckj/.scripts/inf-tools:/Users/ckj/.scripts/mytools:$PATH"
+export PATH="/usr/local/opt/php@5.6/bin:$PATH"
+export PATH="/usr/local/mysql/bin:/usr/local/bin:/Users/ckj/.scripts/inf-tools:/Users/ckj/.scripts/mytools:$HOME/.composer/vendor/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -45,4 +46,3 @@ if command -v brew >/dev/null 2>&1; then
 	# Load rupa's z if installed
 	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 fi
-eval $(cachalot env)
