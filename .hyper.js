@@ -12,7 +12,7 @@ module.exports = {
     fontSize: 16,
 
     // font family with optional fallbacks
-    fontFamily: 'Inconsolata, monospace',
+    fontFamily: "'Fira Mono', 'Inconsolata', monaco",
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -46,7 +46,7 @@ module.exports = {
     borderColor: '#333',
 
     // custom CSS to embed in the main window
-    css: '',
+    css: `.splitpane_divider { background-color: lavender !important; }`,
 
     // custom CSS to embed in the terminal window
     termCSS: '',
@@ -133,16 +133,18 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     // Theme.
-    'hyper-snazzy',
+    //'hyper-chesterish',
+    'hyper-papercolor',
     // Open new tabs in same directory.
-    'hypercwd',
-    // Open links in browser.
     'hyperlinks',
     // Spice up the tabs a little bit.
     'hyper-tabs-enhanced',
-    // Add a statusline at the bottom of the window.
-    'hyper-statusline'
+    // Safe pasting into the terminal.
+    'hyperterm-safepaste'
   ],
+// Here are some themes I like:
+  // hyper-snazzy
+
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
