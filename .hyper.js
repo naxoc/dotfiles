@@ -2,6 +2,17 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
+// This is my own lo-fi cheap-ass theme-switcher.
+const colorScheme = 'notlight';
+let mySettings = {
+    dividerLine: 'lavender',
+    themeName: 'hyper-chesterish',
+};
+if ('light' === colorScheme) {
+  mySettings.dividerLine = 'indigo';
+  mySettings.themeName = 'hyper-papercolor';
+}
+
 module.exports = {
   config: {
     // choose either `'stable'` for receiving highly polished,
@@ -46,7 +57,8 @@ module.exports = {
     borderColor: '#333',
 
     // custom CSS to embed in the main window
-    css: `.splitpane_divider { background-color: lavender !important; }`,
+    //css: `.splitpane_divider { background-color: lavender !important; }`,
+    css: `.splitpane_divider { background-color: ${mySettings.dividerLine} !important; }`,
 
     // custom CSS to embed in the terminal window
     termCSS: '',
@@ -133,8 +145,7 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     // Theme.
-    //'hyper-chesterish',
-    'hyper-papercolor',
+    mySettings.themeName,
     // Open new tabs in same directory.
     'hyperlinks',
     // Spice up the tabs a little bit.
