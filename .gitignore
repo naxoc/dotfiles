@@ -1,7 +1,7 @@
-.DS_STORE
+.DS_Store
+.netrwhist
 .idea
-.vscode
-sites/all/modules/ckj_tools
-*.sublime-project
-*.sublime-workspace
-.sass-cache
+*.code-workspace
+.dce_container
+Taskfile.yml
+

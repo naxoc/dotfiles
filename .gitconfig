@@ -1,37 +1,62 @@
 [user]
+	email = naxoc@users.noreply.github.com
 	name = Camilla Krag Jensen
-  email = ckj@information.dk
+[includeIf "gitdir:~/Dev/"]
+	path = ~/.gitconfig-a8c-email
+[includeIf "gitdir:~/Dev/_code/"]
+	path = ~/.gitconfig-normal-email
+
 [push]
 	default = tracking
+	autoSetupRemote = true
 [color "diff"]
 	meta = cyan
 	frag = yellow
 [color]
-   diff = auto
-   status = auto
-   branch = auto
-   interactive = auto
-   ui = true
-   pager = true
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
 [core]
-  whitespace = fix,-indent-with-non-tab,-indent-with-tab,trailing-space,cr-at-eol
+	whitespace = fix,-indent-with-non-tab,-indent-with-tab,trailing-space,cr-at-eol
 	excludesfile = /Users/ckj/.gitignore
+  pager = delta --paging=always
+
+[delta]
+    navigate = true    # use n and N to move between diff sections DELTA
+		side-by-side = true
+[interactive]
+    diffFilter = delta --color-only
+[diff]
+    colorMoved = default
 [alias]
-  co = checkout
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-  st = status
-  b = branch
-  diss = diff **/*.scss
-  coss = commit *.css -m 'Compiled css'
-  undo = reset --hard HEAD~1
-  redo = reset --hard HEAD@{1}
-  uncommit = reset HEAD~1
-[filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
-[filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
+	co = checkout
+	st = status
+	b = branch
+	d = diff
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	undo = reset --hard HEAD~1
+	redo = reset --hard HEAD@{1}
+	uncommit = reset HEAD~1
+	files = diff --name-status
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 	required = true
-[oh-my-zsh]
-	hide-status = 1
+[pager]
+	branch = false
+[merge]
+	conflictStyle = zdiff3
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[init]
+	defaultBranch = trunk
+[commit]
+	template = /Users/ckj/.stCommitMsg
