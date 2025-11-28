@@ -1,14 +1,24 @@
-# Files
-alias ls='ls -G'
-alias l='ls -Glah'
-alias ll='ls -Glah'
-
-# Git
-alias gc='git commit -v'
-alias gd='git diff'
-alias ggpull='git pull --rebase origin $(current_branch)'
-alias ggpush='git push origin $(current_branch)'
-
 # Grep
 alias grep='grep --color=auto'
 
+# PHP stuff
+alias xdb='XDEBUG_CONFIG="idekey=PHPSTORM" '
+
+# Git aliases
+alias ggpull='git pull origin "$(git_current_branch)"'
+alias ggpush='git push origin "$(git_current_branch)"'
+alias gc='git commit --verbose'
+alias b='git branch --sort=committerdate'
+alias lg='lazygit'	
+
+# Just and friends
+alias j="just"
+alias jg="just --justfile ~/.justfile --working-directory ."
+
+# Apps
+alias typora="open -a typora"
+alias marked="open -a Marked"
+
+
+# Work aliases
+alias synk="cd ~/Code/sandbox && unison -ui text -repeat watch automattic-sandbox"
