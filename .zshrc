@@ -77,16 +77,6 @@ if [ -z "$INTELLIJ_ENVIRONMENT_READER" ]; then
 
 fi # Conditional for PHPstorm end
 
-export MA_COMPUTER='bigelow'
-
-# Hack. See https://community.localwp.com/t/lightning-open-site-shell-not-working/14150/4
-if [[ $PATH =~ :/Applications/Local\.app ]]; then
-	# We are on Local 
-	MA_ICON='🦈'
-else
-	MA_ICON='🐴'
-fi
-
 export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
