@@ -22,7 +22,6 @@
 [core]
 	whitespace = fix,-indent-with-non-tab,-indent-with-tab,trailing-space,cr-at-eol
 	excludesfile = /Users/ckj/.gitignore
-  pager = delta --paging=always
 
 [delta]
     navigate = true    # use n and N to move between diff sections DELTA

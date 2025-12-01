@@ -1,7 +1,8 @@
 autoload -Uz compinit && compinit
 
 source "$HOME/Documents/Computer/export-vars"
-source "$HOME/.aliases"  
+source "$COMPUTER_DOTFILES/.aliases"  
+source "$COMPUTER_DOTFILES/.bash_functions"  
 
 # PHPStorm workaround. See https://stackoverflow.com/questions/61469797/intellij-not-picking-up-environment-variables-when-using-zsh
 if [ -z "$INTELLIJ_ENVIRONMENT_READER" ]; then
