@@ -11,14 +11,11 @@ alias gc='git commit --verbose'
 alias b='git branch --sort=committerdate'
 alias lg='lazygit'	
 
-# Just and friends
+# j is normal just
 alias j="just"
+# jg only considers the global justfile.
 alias jg="just --justfile ~/.justfile --working-directory ."
 
 # Apps
 alias typora="open -a typora"
 alias marked="open -a Marked"
-
-
-# Work aliases
-alias synk="cd ~/Code/sandbox && unison -ui text -repeat watch automattic-sandbox"
